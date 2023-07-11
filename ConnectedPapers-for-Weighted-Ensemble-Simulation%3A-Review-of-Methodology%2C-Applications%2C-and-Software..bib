@@ -1,0 +1,566 @@
+@article{2456c2bab5c3591518db6c4d8f81719240413bf8,
+title = {Weighted Ensemble Simulation: Review of Methodology, Applications, and Software.},
+year = {2017},
+url = {https://www.semanticscholar.org/paper/2456c2bab5c3591518db6c4d8f81719240413bf8},
+abstract = {The weighted ensemble (WE) methodology orchestrates quasi-independent parallel simulations run with intermittent communication that can enhance sampling of rare events such as protein conformational changes, folding, and binding. The WE strategy can achieve superlinear scaling-the unbiased estimation of key observables such as rate constants and equilibrium state populations to greater precision than would be possible with ordinary parallel simulation. WE software can be used to control any dynamics engine, such as standard molecular dynamics and cell-modeling packages. This article reviews the theoretical basis of WE and goes on to describe successful applications to a number of complex biological processes-protein conformational transitions, (un)binding, and assembly processes, as well as cell-scale processes in systems biology. We furthermore discuss the challenges that need to be overcome in the next phase of WE methodological development. Overall, the combined advances in WE methodology and software have enabled the simulation of long-timescale processes that would otherwise not be practical on typical computing resources using standard simulation.},
+author = {D. Zuckerman and L. Chong},
+journal = {Annual review of biophysics},
+volume = {46},
+pages = {
+          43-57
+        },
+doi = {10.1146/annurev-biophys-070816-033834},
+pmid = {28301772},
+}
+
+@article{aef875957f4a811572cfa7ca73b255b200d81080,
+title = {Path-sampling strategies for simulating rare events in biomolecular systems.},
+year = {2017},
+url = {https://www.semanticscholar.org/paper/aef875957f4a811572cfa7ca73b255b200d81080},
+abstract = {S2 TL;DR: This work states that path sampling approaches have been in use for nearly 20 years in biomolecular systems and enabled the generation of pathways and calculation of rate constants for ms processes, including large protein conformational changes, protein folding, and protein (un)binding.},
+author = {L. Chong and A. S. Saglam and D. Zuckerman},
+journal = {Current opinion in structural biology},
+volume = {43},
+pages = {
+          88-94
+        },
+doi = {10.1016/j.sbi.2016.11.019},
+pmid = {27984811},
+}
+
+@article{88e05ff9425f31b9b0e85ef7144d2fa838343037,
+title = {WESTPA: an interoperable, highly scalable software package for weighted ensemble simulation and analysis.},
+year = {2015},
+url = {https://www.semanticscholar.org/paper/88e05ff9425f31b9b0e85ef7144d2fa838343037},
+abstract = {The weighted ensemble (WE) path sampling approach orchestrates an ensemble of parallel calculations with intermittent communication to enhance the sampling of rare events, such as molecular associations or conformational changes in proteins or peptides. Trajectories are replicated and pruned in a way that focuses computational effort on underexplored regions of configuration space while maintaining rigorous kinetics. To enable the simulation of rare events at any scale (e.g., atomistic, cellular), we have developed an open-source, interoperable, and highly scalable software package for the execution and analysis of WE simulations: WESTPA (The Weighted Ensemble Simulation Toolkit with Parallelization and Analysis). WESTPA scales to thousands of CPU cores and includes a suite of analysis tools that have been implemented in a massively parallel fashion. The software has been designed to interface conveniently with any dynamics engine and has already been used with a variety of molecular dynamics (e.g., GROMACS, NAMD, OpenMM, AMBER) and cell-modeling packages (e.g., BioNetGen, MCell). WESTPA has been in production use for over a year, and its utility has been demonstrated for a broad set of problems, ranging from atomically detailed host–guest associations to nonspatial chemical kinetics of cellular signaling networks. The following describes the design and features of WESTPA, including the facilities it provides for running WE simulations and storing and analyzing WE simulation data, as well as examples of input and output.},
+author = {M. Zwier and J. Adelman and Joseph W. Kaus and A. Pratt and Kim F. Wong and Nicholas B Rego and Ernesto Suárez and S. Lettieri and David W Wang and M. Grabe and D. Zuckerman and L. Chong},
+journal = {Journal of chemical theory and computation},
+volume = {11 2},
+pages = {
+          800-9
+        },
+doi = {10.1021/ct5010615},
+pmid = {26392815},
+}
+
+@article{84bffe5f36a29d128724522f5a03bb87f8fdacda,
+title = {Accurate Estimation of Protein Folding and Unfolding Times: Beyond Markov State Models},
+year = {2016},
+url = {https://www.semanticscholar.org/paper/84bffe5f36a29d128724522f5a03bb87f8fdacda},
+abstract = {Because standard molecular dynamics (MD) simulations are unable to access time scales of interest in complex biomolecular systems, it is common to “stitch together” information from multiple shorter trajectories using approximate Markov state model (MSM) analysis. However, MSMs may require significant tuning and can yield biased results. Here, by analyzing some of the longest protein MD data sets available (>100 μs per protein), we show that estimators constructed based on exact non-Markovian (NM) principles can yield significantly improved mean first-passage times (MFPTs) for protein folding and unfolding. In some cases, MSM bias of more than an order of magnitude can be corrected when identical trajectory data are reanalyzed by non-Markovian approaches. The NM analysis includes “history” information, higher order time correlations compared to MSMs, that is available in every MD trajectory. The NM strategy is insensitive to fine details of the states used and works well when a fine time-discretization (i.e., small “lag time”) is used.},
+author = {Ernesto Suárez and J. Adelman and D. Zuckerman},
+journal = {Journal of Chemical Theory and Computation},
+volume = {12},
+pages = {3473 - 3481},
+doi = {10.1021/acs.jctc.6b00339},
+pmid = {27340835},
+}
+
+@article{8b546a57b53e915e5f390da1b5f648689af5c318,
+title = {Ranking of Ligand Binding Kinetics Using a Weighted Ensemble Approach and Comparison with a Multiscale Milestoning Approach},
+year = {2020},
+url = {https://www.semanticscholar.org/paper/8b546a57b53e915e5f390da1b5f648689af5c318},
+abstract = {In order to improve lead optimization efforts in finding the right ligand, pharmaceutical industries need to know the ligand's binding kinetics, such as binding and unbinding rate constants, which often correlate with the ligand's efficacy in vivo. To predict binding kinetics efficiently, enhanced sampling methods, such as milestoning and the weighted ensemble (WE) method, have been used in molecular dynamics (MD) simulations of these systems. However, a direct comparison of these enhanced sampling methods in ranking ligands has not been done. Hence, a WE approach called the concurrent adaptive sampling (CAS) algorithm was used to rank seven ligands for beta-cyclodextrin, a system in which a milestoning approach called simulation enabled estimation of kinetic rates (SEEKR) was also used. Overall, the CAS algorithm can successfully rank ligands using the unbinding rate constants k-on's and binding free energies delta-G's, as SEEKR did, with reduced computational cost that is about the same as SEEKR. We discuss "best practices" for using WE approaches such as the CAS algorithm and advantages and disadvantages of each enhanced sampling method for future use.},
+author = {Surl-Hee Ahn and Benjamin R. Jagger and R. Amaro},
+journal = {Journal of chemical information and modeling},
+volume = {null},
+pages = {null},
+doi = {10.1021/acs.jcim.9b00968},
+pmid = {32315175},
+}
+
+@article{02dccaea5ed9854baf425d40511dacc6572cbe34,
+title = {Efficiently sampling conformations and pathways using the concurrent adaptive sampling (CAS) algorithm.},
+year = {2017},
+url = {https://www.semanticscholar.org/paper/02dccaea5ed9854baf425d40511dacc6572cbe34},
+abstract = {Molecular dynamics simulations are useful in obtaining thermodynamic and kinetic properties of bio-molecules, but they are limited by the time scale barrier. That is, we may not obtain properties' efficiently because we need to run microseconds or longer simulations using femtosecond time steps. To overcome this time scale barrier, we can use the weighted ensemble (WE) method, a powerful enhanced sampling method that efficiently samples thermodynamic and kinetic properties. However, the WE method requires an appropriate partitioning of phase space into discrete macrostates, which can be problematic when we have a high-dimensional collective space or when little is known a priori about the molecular system. Hence, we developed a new WE-based method, called the "Concurrent Adaptive Sampling (CAS) algorithm," to tackle these issues. The CAS algorithm is not constrained to use only one or two collective variables, unlike most reaction coordinate-dependent methods. Instead, it can use a large number of collective variables and adaptive macrostates to enhance the sampling in the high-dimensional space. This is especially useful for systems in which we do not know what the right reaction coordinates are, in which case we can use many collective variables to sample conformations and pathways. In addition, a clustering technique based on the committor function is used to accelerate sampling the slowest process in the molecular system. In this paper, we introduce the new method and show results from two-dimensional models and bio-molecules, specifically penta-alanine and a triazine trimer.},
+author = {Surl-Hee Ahn and J. Grate and Eric F Darve},
+journal = {The Journal of chemical physics},
+volume = {147 7},
+pages = {
+          074115
+        },
+doi = {10.1063/1.4999097},
+pmid = {28830168},
+arxivid = {1705.00413},
+}
+
+@article{af5dc6a59251f4a5e433eb6277906a811c35dd39,
+title = {Estimating first‐passage time distributions from weighted ensemble simulations and non‐Markovian analyses},
+year = {2016},
+url = {https://www.semanticscholar.org/paper/af5dc6a59251f4a5e433eb6277906a811c35dd39},
+abstract = {First‐passage times (FPTs) are widely used to characterize stochastic processes such as chemical reactions, protein folding, diffusion processes or triggering a stock option. In previous work (Suarez et al., JCTC 2014;10:2658‐2667), we demonstrated a non‐Markovian analysis approach that, with a sufficient subset of history information, yields unbiased mean first‐passage times from weighted‐ensemble (WE) simulations. The estimation of the distribution of the first‐passage times is, however, a more ambitious goal since it cannot be obtained by direct observation in WE trajectories. Likewise, a large number of events would be required to make a good estimation of the distribution from a regular “brute force” simulation. Here, we show how the previously developed non‐Markovian analysis can generate approximate, but highly accurate, FPT distributions from WE data. The analysis can also be applied to any other unbiased trajectories, such as from standard molecular dynamics simulations. The present study employs a range of systems with independent verification of the distributions to demonstrate the success and limitations of the approach. By comparison to a standard Markov analysis, the non‐Markovian approach is less sensitive to the user‐defined discretization of configuration space.},
+author = {Ernesto Suárez and A. Pratt and L. Chong and D. Zuckerman},
+journal = {Protein Science},
+volume = {25},
+pages = {null},
+doi = {10.1002/pro.2738},
+pmid = {26131764},
+}
+
+@article{1068197434a8e303802bb090be7284b7bba83a96,
+title = {WESTPA 2.0: High-performance upgrades for weighted ensemble simulations and analysis of longer-timescale applications},
+year = {2021},
+url = {https://www.semanticscholar.org/paper/1068197434a8e303802bb090be7284b7bba83a96},
+abstract = {The weighted ensemble (WE) family of methods is one of several statistical-mechanics based path sampling strategies that can provide estimates of key observables (rate constants, pathways) using a fraction of the time required by direct simulation methods such as molecular dynamics or discrete-state stochastic algorithms. WE methods oversee numerous parallel trajectories using intermittent overhead operations at fixed time intervals, enabling facile interoperability with any dynamics engine. Here, we report on major upgrades to the WESTPA software package, an open-source, high-performance framework that implements both basic and recently developed WE methods. These upgrades offer substantial improvements over traditional WE. Key features of the new WESTPA 2.0 software enhance efficiency and ease of use: an adaptive binning scheme for more efficient surmounting of large free energy barriers, streamlined handling of large simulation datasets, exponentially improved analysis of kinetics, and developer-friendly tools for creating new WE methods, including a Python API and resampler module for implementing both binned and “binless” WE strategies. Table of Contents/Abstract Image For the manuscript “WESTPA 2.0: High-performance upgrades for weighted ensemble simulations and analysis of longer-timescale applications” by Russo et al.},
+author = {John D. Russo and She Zhang and Jeremy M. G. Leung and Anthony T. Bogetti and Jeff P. Thompson and A. DeGrave and Paul A. Torrillo and A. Pratt and Kim F. Wong and Junchao Xia and J. Copperman and J. Adelman and M. Zwier and David N. LeBard and D. Zuckerman and L. Chong},
+journal = {bioRxiv},
+volume = {null},
+pages = {null},
+doi = {10.1101/2021.12.05.471280},
+}
+
+@article{53464aba80120522dfc98f998014082ae490b099,
+title = {Wepy: A Flexible Software Framework for Simulating Rare Events with Weighted Ensemble Resampling},
+year = {2020},
+url = {https://www.semanticscholar.org/paper/53464aba80120522dfc98f998014082ae490b099},
+abstract = {Here, we introduce the open-source software framework wepy (https://github.com/ADicksonLab/wepy) which is a toolkit for running and analyzing weighted ensemble (WE) simulations. The wepy toolkit is in pure Python and as such is highly portable and extensible, making it an excellent platform to develop and use new WE resampling algorithms such as WExplore, REVO, and others while leveraging the entire Python ecosystem. In addition, wepy simplifies WE-specific analyses by defining out-of-core tree-like data structures using the cross-platform HDF5 file format. In this paper, we discuss the motivations and challenges for simulating rare events in biomolecular systems. As has previously been shown, high-dimensional WE resampling algorithms such as WExplore and REVO have been successful at these tasks, especially for rare events that are difficult to describe by one or two collective variables. We explain in detail how wepy facilitates implementation of these algorithms, as well as aids in analyzing the unique structure of WE simulation results. To explain how wepy and WE work in general, we describe the mathematical formalism of WE, an overview of the architecture of wepy, and provide code examples of how to construct, run, and analyze simulation results for a protein–ligand system (T4 Lysozyme in an implicit solvent). This paper is written with a variety of readers in mind, including (1) those curious about how to leverage WE rare-event simulations for their domain, (2) current WE users who want to begin using new high-dimensional resamplers such as WExplore and REVO, and (3) expert users who would like to prototype or implement their own algorithms that can be easily adopted by others.},
+author = {Samuel D. Lotz and A. Dickson},
+journal = {ACS Omega},
+volume = {5},
+pages = {31608 - 31623},
+doi = {10.1021/acsomega.0c03892},
+pmid = {33344813},
+}
+
+@article{93797613e883e215735b4a96064fbbae6c102bb7,
+title = {Protein–protein binding pathways and calculations of rate constants using fully-continuous, explicit-solvent simulations† †Electronic supplementary information (ESI) available. See DOI: 10.1039/c8sc04811h},
+year = {2018},
+url = {https://www.semanticscholar.org/paper/93797613e883e215735b4a96064fbbae6c102bb7},
+abstract = {A grand challenge in the field of biophysics has been the complete characterization of protein-protein binding processes at atomic resolution. This characterization requires the direct simulation of binding pathways starting from the initial unbound state and proceeding through states that are too transient to be captured by experiment. Here we applied the weighted ensemble path sampling strategy to enable atomistic simulation of protein-protein binding pathways. Our simulation generated 203 fully continuous binding pathways for the bacterial proteins, barnase and barstar, yielding a computed kon that is within error of experiment. Results reveal that the formation of the “encounter complex” intermediate is rate limiting with ~11% of all diffusional collisions being productive. Consistent with experiment, our simulations identify R59 as the most kinetically important barnase residue for the binding process. Furthermore, protein desolvation occurs late in the binding process during the rearrangement of the encounter complex to the native complex. Notably, the positions of interfacial crystallographic water molecules that bridge hydrogen bonds between barnase and barstar are occupied upon formation of the native complex in our simulations. Our simulations were completed within a month using 1600 CPU cores at a time, demonstrating that it is now practical to carry out atomistic simulations of protein-protein binding processes, particularly using the latest GPU-accelerated computing.},
+author = {A. S. Saglam and L. Chong},
+journal = {Chemical Science},
+volume = {10},
+pages = {2360 - 2372},
+doi = {10.1039/c8sc04811h},
+pmid = {30881664},
+}
+
+@article{04c1d92828406529208c782b34a3451ce3e03a57,
+title = {Separating forward and backward pathways in nonequilibrium umbrella sampling.},
+year = {2009},
+url = {https://www.semanticscholar.org/paper/04c1d92828406529208c782b34a3451ce3e03a57},
+abstract = {Umbrella sampling enforces uniform sampling of steady-state distributions that are functions of arbitrary numbers of order parameters. The key to applying such methods to nonequilibrium processes is the accumulation of fluxes between regions. A significant difference between microscopically reversible and irreversible systems is that, in the latter case, the transition path ensemble for a reaction can be significantly different for "forward" and "backward" trajectories. Here, we show how to separately treat forward and backward pathways in nonequilibrium umbrella sampling simulations by working in an extended space. In this extended space, the exact rate (for equilibrium or nonequilibrium processes) can be calculated "for free" as a flux in phase space. We compare the efficiency of this rate calculation with forward flux sampling for a two-dimensional potential and show that nonequilibrium umbrella sampling is more efficient when an intermediate is present. We show that this technique can also be used to describe steady-state limit cycles by examining a simulation of circadian oscillations. We obtain the path of the limit cycle in a space of 22 order parameters, as well as the oscillation period. The relation of our method to others is discussed.},
+author = {A. Dickson and A. Warmflash and A. Dinner},
+journal = {The Journal of chemical physics},
+volume = {131 15},
+pages = {
+          154104
+        },
+doi = {10.1063/1.3244561},
+pmid = {20568844},
+}
+
+@article{f3c8bdb7431ac9927510f4d05a4f288b1458722d,
+title = {Computational Estimation of Microsecond to Second Atomistic Folding Times.},
+year = {2019},
+url = {https://www.semanticscholar.org/paper/f3c8bdb7431ac9927510f4d05a4f288b1458722d},
+abstract = {Despite the development of massively parallel computing hardware including inexpensive graphics processing units (GPUs), it has remained infeasible to simulate the folding of atomistic proteins at room temperature using conventional molecular dynamics (MD) beyond the microsecond scale. Here, we report the folding of atomistic, implicitly solvated protein systems with folding times τ ranging from ∼10 μs to ∼100 ms using the weighted ensemble (WE) strategy in combination with GPU computing. Starting from an initial structure or set of structures, WE organizes an ensemble of GPU-accelerated MD trajectory segments via intermittent pruning and replication events to generate statistically unbiased estimates of rate constants for rare events such as folding; no biasing forces are used. Although the variance among atomistic WE folding runs is significant, multiple independent runs are used to reduce and quantify statistical uncertainty. Folding times are estimated directly from WE probability flux and from history-augmented Markov analysis of the WE data. Three systems were examined: NTL9 at low solvent viscosity (yielding τf = 0.8-9 μs), NTL9 at water-like viscosity (τf = 0.2-2 ms), and Protein G at low viscosity (τf = 3-200 ms). In all cases, the folding time, uncertainty, and ensemble properties could be estimated from WE simulation; for Protein G, this characterization required significantly less overall computing than would be required to observe a single folding event with conventional MD simulations. Our results suggest that the use and calibration of force fields and solvent models for precise estimation of kinetic quantities is becoming feasible.},
+author = {U. Adhikari and Barmak Mostofian and J. Copperman and S. Subramanian and Andrew A. Petersen and D. Zuckerman},
+journal = {Journal of the American Chemical Society},
+volume = {141 16},
+pages = {
+          6519-6526
+        },
+doi = {10.1021/jacs.8b10735},
+pmid = {30892023},
+}
+
+@article{d791cdb5ee0c1ae8012d7c832620b941f618c8c6,
+title = {Efficient sampling in stochastic biological models},
+year = {2016},
+url = {https://www.semanticscholar.org/paper/d791cdb5ee0c1ae8012d7c832620b941f618c8c6},
+abstract = {Even when the underlying dynamics are known, studying the emergent behavior of stochastic biological systems in silico can be computationally intractable, due to the difficulty of comprehensively sampling these models. 
+This thesis presents the study of two techniques for efficiently sampling models of complex biological systems. 
+First, the weighted ensemble enhanced sampling technique is adapted for use in sampling chemical kinetics simulations, as well as spatially resolved stochastic reaction-diffusion kinetics. 
+The technique is shown to scale to large, cell-scale simulations, and to accelerate the sampling of observables by orders of magnitude in some cases. 
+Second, I study the free energy estimates of peptides and proteins using Markov random fields. 
+These graphical models are constructed from physics-based forcefields, uniformly sampled at different densities in dihedral angle space, and free energy estimates are computed using loopy belief propagation. 
+The effect of sample density on the free energy estimates provided by loopy belief propagation is assessed, and it is found that in most cases a modest increase in sample density leads to significant improvement in convergence. 
+Additionally, the approximate free energies from loopy belief propagation are compared to statistically exact computations and are confirmed to be both accurate and orders of magnitude faster than traditional methods in the models assessed.},
+author = {Rory M. Donovan-Maiye},
+}
+
+@article{18c698ebc470b06b58c480c7b2446156226807cd,
+title = {A Minimal, Adaptive Binning Scheme for Weighted Ensemble Simulations},
+year = {2020},
+url = {https://www.semanticscholar.org/paper/18c698ebc470b06b58c480c7b2446156226807cd},
+abstract = {A promising approach for simulating rare events with rigorous kinetics is the weighted ensemble path sampling strategy. One challenge of this strategy is the division of configurational space into bins for sampling. Here we present the minimal adaptive binning (MAB) scheme for the automated, adaptive placement of bins along a progress coordinate within the framework of the weighted ensemble strategy. In this scheme, a fixed number of bins are evenly spaced between the positions of trailing and leading trajectories along a progress coordinate after each resampling interval. To further enhance the sampling of bottleneck regions, additional bins are dedicated to trajectories residing in the least visited regions of the free energy landscape. On average, bins are more finely spaced along steeper regions of the landscape and further apart along flatter regions of the landscape. We applied the scheme to simulations of the following processes, listed in order of increasing complexity: (i) transitions between states of a double-well toy potential; (ii) association of Na+ and Cl− ions; and (iii) conformational sampling of a tumor suppressor p53 peptide fragment. Results reveal that our binning scheme, despite its simplicity, efficiently estimates rate constants for rare-event processes with large free energy barriers and enhances conformational sampling.},
+author = {Paul A. Torrillo and Anthony T. Bogetti and L. Chong},
+journal = {bioRxiv},
+volume = {null},
+pages = {null},
+doi = {10.1101/2020.11.05.369744},
+pmid = {33577732},
+}
+
+@article{ab0d4d1e0c46303183213907b7df98f894b40a39,
+title = {REVO: Resampling of ensembles by variation optimization},
+year = {2019},
+url = {https://www.semanticscholar.org/paper/ab0d4d1e0c46303183213907b7df98f894b40a39},
+abstract = {Conventional molecular dynamics simulations are incapable of sampling many important interactions in biomolecular systems due to their high dimensionality and rough energy landscapes. To observe rare events and calculate transition rates in these systems, enhanced sampling is a necessity. In particular, the study of ligand-protein interactions necessitates a diverse ensemble of protein conformations and transition states, and for many systems, this occurs on prohibitively long time scales. Previous strategies such as WExplore that can be used to determine these types of ensembles are hindered by problems related to the regioning of conformational space. Here, we propose a novel, regionless, enhanced sampling method that is based on the weighted ensemble framework. In this method, a value referred to as “trajectory variation” is optimized after each cycle through cloning and merging operations. This method allows for a more consistent measurement of observables and broader sampling resulting in the efficient exploration of previously unexplored conformations. We demonstrate the performance of this algorithm with the N-dimensional random walk and the unbinding of the trypsin-benzamidine system. The system is analyzed using conformation space networks, the residence time of benzamidine is confirmed, and a new unbinding pathway for the trypsin-benzamidine system is found. We expect that resampling of ensembles by variation optimization will be a useful general tool to broadly explore free energy landscapes.},
+author = {N. Donyapour and Nicole M Roussey and A. Dickson},
+journal = {The Journal of Chemical Physics},
+volume = {150},
+pages = {null},
+doi = {10.1063/1.5100521},
+pmid = {31255090},
+}
+
+@article{8703f89409dc7913907d81e4aeb622efd6a1c05a,
+title = {Steady-state simulations using weighted ensemble path sampling.},
+year = {2009},
+url = {https://www.semanticscholar.org/paper/8703f89409dc7913907d81e4aeb622efd6a1c05a},
+abstract = {We extend the weighted ensemble (WE) path sampling method to perform rigorous statistical sampling for systems at steady state. A straightforward steady-state implementation of WE is directly practical for simple landscapes, but not when significant metastable intermediates states are present. We therefore develop an enhanced WE scheme, building on existing ideas, which accelerates attainment of steady state in complex systems. We apply both WE approaches to several model systems, confirming their correctness and efficiency by comparison with brute-force results. The enhanced version is significantly faster than the brute force and straightforward WE for systems with WE bins that accurately reflect the reaction coordinate(s). The new WE methods can also be applied to equilibrium sampling, since equilibrium is a steady state.},
+author = {D. Bhatt and Bin W. Zhang and D. Zuckerman},
+journal = {The Journal of chemical physics},
+volume = {133 1},
+pages = {
+          014110
+        },
+doi = {10.1063/1.3456985},
+pmid = {20614962},
+arxivid = {0910.5255},
+}
+
+@article{0576986a3e70b503e39c66d4e2b9f158a894feeb,
+title = {Computational estimation of ms-sec atomistic folding times},
+year = {2018},
+url = {https://www.semanticscholar.org/paper/0576986a3e70b503e39c66d4e2b9f158a894feeb},
+abstract = {Despite the development of massively parallel computing hardware including inexpensive graphics processing units (GPUs), it has remained infeasible to simulate the folding of atomistic proteins at room temperature using conventional molecular dynamics (MD) beyond the μs scale. Here we report the folding of atomistic, implicitly solvated protein systems with folding times τf ranging from ~100 μs to ~10s using the weighted ensemble (WE) strategy in combination with GPU computing. Starting from an initial structure or set of structures, WE organizes an ensemble of GPU-accelerated MD trajectory segments via intermittent pruning and replication events to generate statistically unbiased estimates of rate constants for rare events such as folding; no biasing forces are used. Although the variance among atomistic WE folding runs is significant, multiple independent runs are used to reduce and quantify statistical uncertainty. Three systems were examined: NTL9 at low solvent viscosity (yielding τf ~ 5μs), NTL9 at water-like viscosity (τf ~ 40μs), and Protein G at low viscosity (τf ~ 10s). In all cases the folding time, uncertainty, and ensemble properties could be estimated from WE simulation; for protein G, this characterization required significantly less overall computing than would be required to observe a single folding event with conventional MD simulations. Our results suggest discrepancies with experimental folding times that should enable improvement of force fields and solvent models.},
+author = {U. Adhikari and Barmak Mostofian and Andrew A. Petersen and D. Zuckerman},
+journal = {bioRxiv},
+volume = {null},
+pages = {null},
+doi = {10.1101/427393},
+}
+
+@article{423666b580b56081b0ab063fb9b5d2ec05367769,
+title = {Efficient in silico exploration of RNA interhelical conformations using Euler angles and WExplore},
+year = {2014},
+url = {https://www.semanticscholar.org/paper/423666b580b56081b0ab063fb9b5d2ec05367769},
+abstract = {HIV-1 TAR RNA is a two-helix bulge motif that plays a critical role in HIV viral replication and is an important drug target. However, efforts at designing TAR inhibitors have been challenged by its high degree of structural flexibility, which includes slow large-amplitude reorientations of its helices with respect to one another. Here, we use the recently introduced algorithm WExplore in combination with Euler angles to achieve unprecedented sampling of the TAR conformational ensemble. Our ensemble achieves similar agreement with experimental NMR data when compared with previous TAR computational studies, and is generated at a fraction of the computational cost. It clearly emerges from configuration space network analysis that the intermittent formation of the A22-U40 base pair acts as a reversible switch that enables sampling of interhelical conformations that would otherwise be topologically disallowed. We find that most previously determined ligand-bound structures are found in similar location in the network, and we use a sample-and-select approach to guide the construction of a set of novel conformations which can serve as the basis for future drug development efforts. Collectively, our findings demonstrate the utility of WExplore in combination with suitable order parameters as a method for exploring RNA conformational space.},
+author = {A. Dickson and A. M. Mustoe and Loïc Salmon and C. Brooks},
+journal = {Nucleic Acids Research},
+volume = {42},
+pages = {12126 - 12137},
+doi = {10.1093/nar/gku799},
+pmid = {25294827},
+}
+
+@article{0b9fb264aac13f4d30467f8f6cfb935a1ef318be,
+title = {Ligand Release Pathways Obtained with WExplore: Residence Times and Mechanisms.},
+year = {2016},
+url = {https://www.semanticscholar.org/paper/0b9fb264aac13f4d30467f8f6cfb935a1ef318be},
+abstract = {The binding of ligands with their molecular receptors is of tremendous importance in biology. Although much emphasis has been placed on characterizing binding sites and bound poses that determine the binding thermodynamics, the pathway by which a ligand binds importantly determines the binding kinetics. The computational study of entire unbiased ligand binding and release pathways is still an emerging field, made possible only recently by advances in computational hardware and sampling methodologies. We have developed one such method (WExplore) that is based on a weighted ensemble of trajectories, which we apply to ligand release for the first time, using a set of three previously characterized interactions between low-affinity ligands and the protein FKBP-12 (FK-506 binding protein). WExplore is found to be more efficient that conventional sampling, even for the nanosecond-scale unbinding events observed here. From a nonequilibrium ensemble of unbinding trajectories, we obtain ligand residence times and release pathways without using biasing forces or a Markovian assumption of transitions between regions. We introduce a set of analysis tools for unbinding transition pathways, including using von Mises-Fisher distributions to model clouds of ligand exit points, which provide a quantitative proxy for ligand surface diffusion. Differences between the transition pathway ensembles of the three ligands are identified and discussed.},
+author = {A. Dickson and Samuel D. Lotz},
+journal = {The journal of physical chemistry. B},
+volume = {120 24},
+pages = {
+          5377-85
+        },
+doi = {10.1021/acs.jpcb.6b04012},
+pmid = {27231969},
+}
+
+@article{a9c7faca75735b1a7441b4b2241925112a4081df,
+title = {Efficient Computer Simulations of Protein-Peptide Binding Using Weighted Ensemble Sampling},
+year = {2013},
+url = {https://www.semanticscholar.org/paper/a9c7faca75735b1a7441b4b2241925112a4081df},
+abstract = {Molecular dynamics simulations can, in principle, provide detailed views of protein-protein association processes. However, these processes frequently occur on timescales inaccessible on current computing resources. These are not particularly slow processes, but rather they are rare — fast but infrequent. The weighted ensemble (WE) sampling approach provides a way to exploit this separation of timescales and focus computing power efficiently on rare events. In this work, it is demonstrated that WE sampling can be used to efficiently obtain kinetic rate constants, pathways, and energy landscapes of molecular association processes. Chapter 1 of this dissertation further discusses the need for enhanced sampling techniques like the WE approach. In Chapter 2, WE sampling is used to study the kinetics of association of four model molecular recognition systems (methane/methane, Na+/Cl–, methane/benzene, and K+/18-crown-6 ether) using molecular dynamics (MD) simulations in explicit water. WE sampling reproduces straightforward “brute force” results while increasing the efficiency of sampling by up to three orders of magnitude. Importantly, the efficiency of WE simulation increases with increasing complexity of the systems under consideration. In Chapter 3, weighted ensemble Brownian dynamics (BD) simulations are used to explore the association between a 13-residue fragment of the p53 tumor suppressor and the MDM2 oncoprotein. The association rates obtained compare favorably with experiment. By directly comparing both flexible and pre-organized variants of p53, it is shown that the “fly-casting” effect, by which natively unstructured proteins may increase their association rates, is not significant in MDM2-p53 peptide binding. Including hydrodynamic interactions in the simulation model dramatically alters the association rate, indicating that the detailed motion of solvent may have substantial effects on the kinetics of protein-protein association. In Chapter 4, an all-atom molecular dynamics simulation of p53-MDM2 binding is described. We obtain an association rate that agrees with the experimental value. The free energy landscape of binding is “funnel-like”, downhill after the initial encounter between p53 and MDM2. Together, the studies described here establish that WE sampling is highly effective in simulating rare molecular association events.},
+author = {M. Zwier},
+}
+
+@article{47d2527341d63b65640526988486fc0434d526d9,
+title = {Weighted-ensemble Brownian dynamics simulations for protein association reactions.},
+year = {1996},
+url = {https://www.semanticscholar.org/paper/47d2527341d63b65640526988486fc0434d526d9},
+abstract = {S2 TL;DR: The method has been applied to the Northrup and Erickson (1992) model of docking-type diffusion-limited reactions and yields reaction rate constants in agreement with those obtained by direct Brownian simulation, but at a fraction of the CPU time.},
+author = {G. Huber and S. Kim},
+journal = {Biophysical journal},
+volume = {70 1},
+pages = {
+          97-110
+        },
+doi = {10.1016/S0006-3495(96)79552-8},
+pmid = {8770190},
+}
+
+@article{f3f775a832129840066b92c46ce1d0cf13b13cf6,
+title = {WExplore: hierarchical exploration of high-dimensional spaces using the weighted ensemble algorithm.},
+year = {2014},
+url = {https://www.semanticscholar.org/paper/f3f775a832129840066b92c46ce1d0cf13b13cf6},
+abstract = {As most relevant motions in biomolecular systems are inaccessible to conventional molecular dynamics simulations, algorithms that enhance sampling of rare events are indispensable. Increasing interest in intrinsically disordered systems and the desire to target ensembles of protein conformations (rather than single structures) in drug development motivate the need for enhanced sampling algorithms that are not limited to "two-basin" problems, and can efficiently determine structural ensembles. For systems that are not well-studied, this must often be done with little or no information about the dynamics of interest. Here we present a novel strategy to determine structural ensembles that uses dynamically defined sampling regions that are organized in a hierarchical framework. It is based on the weighted ensemble algorithm, where an ensemble of copies of the system ("replicas") is directed to new regions of configuration space through merging and cloning operations. The sampling hierarchy allows for a large number of regions to be defined, while using only a small number of replicas that can be balanced over multiple length scales. We demonstrate this algorithm on two model systems that are analytically solvable and examine the 10-residue peptide chignolin in explicit solvent. The latter system is analyzed using a configuration space network, and novel hydrogen bonds are found that facilitate folding.},
+author = {A. Dickson and C. Brooks},
+journal = {The journal of physical chemistry. B},
+volume = {118 13},
+pages = {
+          3532-42
+        },
+doi = {10.1021/jp411479c},
+pmid = {24490961},
+}
+
+@article{812b221542dfa162813ee40bc1d2691379952089,
+title = {A Suite of Tutorials for the WESTPA Rare-Events Sampling Software [Article v1.0].},
+year = {2019},
+url = {https://www.semanticscholar.org/paper/812b221542dfa162813ee40bc1d2691379952089},
+abstract = {The weighted ensemble (WE) strategy has been demonstrated to be highly efficient in generating pathways and rate constants for rare events such as protein folding and protein binding using atomistic molecular dynamics simulations. Here we present five tutorials instructing users in the best practices for preparing, carrying out, and analyzing WE simulations for various applications using the WESTPA software. Users are expected to already have significant experience with running standard molecular dynamics simulations using the underlying dynamics engine of interest (e.g. Amber, Gromacs, OpenMM). The tutorials range from a molecular association process in explicit solvent to more complex processes such as host-guest association, peptide conformational sampling, and protein folding.},
+author = {Anthony T. Bogetti and Barmak Mostofian and A. Dickson and AJ Pratt and A. S. Saglam and P. Harrison and J. Adelman and Max Dudek and Paul A. Torrillo and A. DeGrave and U. Adhikari and M. Zwier and D. Zuckerman and L. Chong},
+journal = {Living journal of computational molecular science},
+volume = {1 2},
+pages = {null},
+doi = {10.33011/livecoms.1.2.10607},
+pmid = {32395705},
+}
+
+@article{365cd0bc7239c6b84d1183bbe0b4c67c68133d45,
+title = {Multiple Ligand Unbinding Pathways and Ligand-Induced Destabilization Revealed by WExplore.},
+year = {2017},
+url = {https://www.semanticscholar.org/paper/365cd0bc7239c6b84d1183bbe0b4c67c68133d45},
+abstract = {S2 TL;DR: Simulations of full ligand exit pathways for the trypsin-benzamidine system are reported using the sampling technique WExplore, which is able to observe millisecond-scale unbinding events using many nanosecond-scale trajectories that are run without introducing biasing forces.},
+author = {A. Dickson and Samuel D. Lotz},
+journal = {Biophysical journal},
+volume = {112 4},
+pages = {
+          620-629
+        },
+doi = {10.1016/j.bpj.2017.01.006},
+pmid = {28256222},
+}
+
+@article{e3bec8108b9d24c170d357a54b8bb7fee005b20d,
+title = {The "weighted ensemble" path sampling method is statistically exact for a broad class of stochastic processes and binning procedures.},
+year = {2008},
+url = {https://www.semanticscholar.org/paper/e3bec8108b9d24c170d357a54b8bb7fee005b20d},
+abstract = {The "weighted ensemble" method, introduced by Huber and Kim [Biophys. J. 70, 97 (1996)], is one of a handful of rigorous approaches to path sampling of rare events. Expanding earlier discussions, we show that the technique is statistically exact for a wide class of Markovian and non-Markovian dynamics. The derivation is based on standard path-integral (path probability) ideas, but recasts the weighted-ensemble approach as simple "resampling" in path space. Similar reasoning indicates that arbitrary nonstatic binning procedures, which merely guide the resampling process, are also valid. Numerical examples confirm the claims, including the use of bins which can adaptively find the target state in a simple model.},
+author = {Bin W. Zhang and D. Jasnow and D. Zuckerman},
+journal = {The Journal of chemical physics},
+volume = {132 5},
+pages = {
+          054107
+        },
+doi = {10.1063/1.3306345},
+pmid = {20136305},
+arxivid = {0810.1963},
+}
+
+@article{35285f8c085fc065fdbf3185c37fa66cd9e25a18,
+title = {AWE-WQ: Fast-Forwarding Molecular Dynamics Using the Accelerated Weighted Ensemble},
+year = {2014},
+url = {https://www.semanticscholar.org/paper/35285f8c085fc065fdbf3185c37fa66cd9e25a18},
+abstract = {A limitation of traditional molecular dynamics (MD) is that reaction rates are difficult to compute. This is due to the rarity of observing transitions between metastable states since high energy barriers trap the system in these states. Recently the weighted ensemble (WE) family of methods have emerged which can flexibly and efficiently sample conformational space without being trapped and allow calculation of unbiased rates. However, while WE can sample correctly and efficiently, a scalable implementation applicable to interesting biomolecular systems is not available. We provide here a GPLv2 implementation called AWE-WQ of a WE algorithm using the master/worker distributed computing WorkQueue (WQ) framework. AWE-WQ is scalable to thousands of nodes and supports dynamic allocation of computer resources, heterogeneous resource usage (such as central processing units (CPU) and graphical processing units (GPUs) concurrently), seamless heterogeneous cluster usage (i.e., campus grids and cloud providers), and support for arbitrary MD codes such as GROMACS, while ensuring that all statistics are unbiased. We applied AWE-WQ to a 34 residue protein which simulated 1.5 ms over 8 months with peak aggregate performance of 1000 ns/h. Comparison was done with a 200 μs simulation collected on a GPU over a similar timespan. The folding and unfolded rates were of comparable accuracy.},
+author = {Badi Abdul-Wahid and Haoyun Feng and D. Rajan and Ronan Costaouec and Eric F Darve and D. Thain and J. Izaguirre},
+journal = {Journal of Chemical Information and Modeling},
+volume = {54},
+pages = {3033 - 3043},
+doi = {10.1021/ci500321g},
+pmid = {25207854},
+}
+
+@article{7c5ae3b7d54176e7ebd4e4f69b1a3c36614f51b2,
+title = {Overview of Weighted Ensemble Simulation: Path-sampling, Steady States, Equilibrium},
+year = {2017},
+url = {https://www.semanticscholar.org/paper/7c5ae3b7d54176e7ebd4e4f69b1a3c36614f51b2},
+abstract = {“Weighted ensemble” (WE) simulation is an enhanced sampling method for non-equilibrium and equilibrium processes that would be impractical to observe using straightforward dynamics simulation. Two key examples are (i) activated processes — i.e., overcoming energy barriers and (ii) binding processes — i.e., sampling rare complexation events. The basic goal of such studies is to get from a known initial state (A in Fig. 1) to a target state B, thereby learning pathways and rates for the process. WE uses a multiple-trajectory strategy in which individual trajectories can spawn multiple daughter trajectories upon reaching new regions of configuration space called bins. The daughters are suitably weighted to ensure statistical rigor. WE simulation can yield rigorous estimates for timescales/processes that are much longer than the simulations themselves.},
+author = {D. Zuckerman},
+}
+
+@article{d5da04b3e8170a614105a8a39bbacd026aa42aeb,
+title = {Efficient and verified simulation of a path ensemble for conformational change in a united-residue model of calmodulin},
+year = {2007},
+url = {https://www.semanticscholar.org/paper/d5da04b3e8170a614105a8a39bbacd026aa42aeb},
+abstract = {The computational sampling of rare, large-scale, conformational transitions in proteins is a well appreciated challenge—for which a number of potentially efficient path-sampling methodologies have been proposed. Here, we study a large-scale transition in a united-residue model of calmodulin using the “weighted ensemble” (WE) approach of Huber and Kim. Because of the model's relative simplicity, we are able to compare our results with brute-force simulations. The comparison indicates that the WE approach quantitatively reproduces the brute-force results, as assessed by considering (i) the reaction rate, (ii) the distribution of event durations, and (iii) structural distributions describing the heterogeneity of the paths. Importantly, the WE method is readily applied to more chemically accurate models, and by studying a series of lower temperatures, our results suggest that the WE method can increase efficiency by orders of magnitude in more challenging systems.},
+author = {Bin W. Zhang and D. Jasnow and D. Zuckerman},
+journal = {Proceedings of the National Academy of Sciences},
+volume = {104},
+pages = {18043 - 18048},
+doi = {10.1073/pnas.0706349104},
+pmid = {17984047},
+}
+
+@article{b5dc0b039ac26b4c771f4c797f106ef4bb36d205,
+title = {Flexibility vs Preorganization: Direct Comparison of Binding Kinetics for a Disordered Peptide and Its Exact Preorganized Analogues.},
+year = {2017},
+url = {https://www.semanticscholar.org/paper/b5dc0b039ac26b4c771f4c797f106ef4bb36d205},
+abstract = {Many intrinsically disordered proteins, which are prevalent in nature, fold only upon binding their structured partner proteins. Such proteins have been hypothesized to have a kinetic advantage over their folded, preorganized analogues in binding their partner proteins. Here we determined the effects of ligand preorganization on the kon for a biomedically important system: an intrinsically disordered p53 peptide ligand and the MDM2 protein receptor. Based on direct simulations of binding pathways, computed kon values for fully disordered and preorganized p53 peptide analogues were within error of each other, indicating little if any kinetic advantage to being disordered or preorganized for binding the MDM2 protein. We also examined the effects of increasing the concentration of MDM2 on the extent to which its mechanism of binding to the p53 peptide is induced fit vs conformational selection. Results predict that the mechanism is solely induced fit if the unfolded state of the peptide is more stable than its folded state; otherwise, the mechanism shifts from being dominated by conformational selection at low MDM2 concentration to induced fit at high MDM2 concentration. Taken together, our results are relevant to any protein binding process that involves a disordered peptide of a similar length that forms a single α-helix upon binding a partner protein. Such disorder-to-helix transitions are common among protein interactions of disordered proteins and are therefore of fundamental biological interest.},
+author = {A. S. Saglam and D. W. Wang and M. Zwier and L. Chong},
+journal = {The journal of physical chemistry. B},
+volume = {121 43},
+pages = {
+          10046-10054
+        },
+doi = {10.1021/acs.jpcb.7b08486},
+pmid = {28992700},
+}
+
+@article{78a4edd4f2d62d7fcb1a32e02cac7a51cb87500c,
+title = {Markovian Weighted Ensemble Milestoning (M-WEM): Long-time Kinetics from Short Trajectories},
+year = {2021},
+url = {https://www.semanticscholar.org/paper/78a4edd4f2d62d7fcb1a32e02cac7a51cb87500c},
+abstract = {We introduce a rare-event sampling scheme, named Markovian Weighted Ensemble Milestoning (M-WEM), which inlays a weighted ensemble framework within a Markovian milestoning theory to efficiently calculate thermodynamic and kinetic properties of long-timescale biomolecular processes from short atomistic molecular dynamics simulations. M-WEM is tested on the Müller-Brown potential model, the conformational switching in alanine dipeptide, and the millisecond timescale protein-ligand unbinding in a trypsin-benzamidine complex. Not only can M-WEM predict the kinetics of these processes with quantitative accuracy, but it also allows for a scheme to reconstruct a multidimensional free energy landscape along additional degrees of freedom which are not part of the milestoning progress coordinate. For the ligand-receptor system, the experimental residence time, association and dissociation kinetics, and binding free energy could be reproduced using M-WEM within a simulation time of a few hundreds of nanoseconds, which is a fraction of the computational cost of other currently available methods, and close to four orders of magnitude less than the experimental residence time. Due to the high accuracy and low computational cost, the M-WEM approach can find potential application in kinetics and free-energy based computational drug design.},
+author = {Dhiman Ray and S. E. Stone and I. Andricioaei},
+journal = {bioRxiv},
+volume = {null},
+pages = {null},
+doi = {10.1101/2021.06.26.450057},
+pmid = {34910499},
+}
+
+@article{011a70cc9c825545c1e423ecc85a7e39b7000923,
+title = {Simulating rare events using a weighted ensemble-based string method.},
+year = {2012},
+url = {https://www.semanticscholar.org/paper/011a70cc9c825545c1e423ecc85a7e39b7000923},
+abstract = {We introduce an extension to the weighted ensemble (WE) path sampling method to restrict sampling to a one-dimensional path through a high dimensional phase space. Our method, which is based on the finite-temperature string method, permits efficient sampling of both equilibrium and non-equilibrium systems. Sampling obtained from the WE method guides the adaptive refinement of a Voronoi tessellation of order parameter space, whose generating points, upon convergence, coincide with the principle reaction pathway. We demonstrate the application of this method to several simple, two-dimensional models of driven Brownian motion and to the conformational change of the nitrogen regulatory protein C receiver domain using an elastic network model. The simplicity of the two-dimensional models allows us to directly compare the efficiency of the WE method to conventional brute force simulations and other path sampling algorithms, while the example of protein conformational change demonstrates how the method can be used to efficiently study transitions in the space of many collective variables.},
+author = {J. Adelman and M. Grabe},
+journal = {The Journal of chemical physics},
+volume = {138 4},
+pages = {
+          044105
+        },
+doi = {10.1063/1.4773892},
+pmid = {23387566},
+arxivid = {1212.3215},
+}
+
+@article{6b558233ef16345f7137505d70258e087ff1414e,
+title = {Efficient Explicit-Solvent Molecular Dynamics Simulations of Molecular Association Kinetics: Methane/Methane, Na(+)/Cl(-), Methane/Benzene, and K(+)/18-Crown-6 Ether.},
+year = {2011},
+url = {https://www.semanticscholar.org/paper/6b558233ef16345f7137505d70258e087ff1414e},
+abstract = {Atomically detailed views of molecular recognition events are of great interest to a variety of research areas in biology and chemistry. Here, we apply the weighted ensemble path sampling approach to improve the efficiency of explicit solvent molecular dynamics (MD) simulations in sampling molecular association events between two methane molecules, Na(+) and Cl(-) ions, methane and benzene, and the K(+) ion and 18-crown-6 ether. Relative to brute force simulation, we obtain efficiency gains of at least 300 and 1100-fold for the most challenging system, K(+)/18-crown-6 ether, in terms of sampling the association rate constant k and distribution of times required to traverse transition paths, respectively. Our results indicate that weighted ensemble sampling is likely to allow for even greater efficiencies for more complex systems with higher barriers to molecular association.},
+author = {M. Zwier and Joseph W. Kaus and L. Chong},
+journal = {Journal of chemical theory and computation},
+volume = {7 4},
+pages = {
+          1189-97
+        },
+doi = {10.1021/ct100626x},
+pmid = {26606365},
+}
+
+@article{2f8e3fad3f550637a7b0cc3e550ddaab4482a129,
+title = {Weighted ensemble milestoning (WEM): A combined approach for rare event simulations.},
+year = {2019},
+url = {https://www.semanticscholar.org/paper/2f8e3fad3f550637a7b0cc3e550ddaab4482a129},
+abstract = {To directly simulate rare events using atomistic molecular dynamics is a significant challenge in computational biophysics. Well-established enhanced-sampling techniques do exist to obtain the thermodynamic functions for such systems. However, developing methods for obtaining the kinetics of long timescale processes from simulation at atomic detail is comparatively less developed an area. Milestoning and the weighted ensemble (WE) method are two different stratification strategies; both have shown promise for computing long timescales of complex biomolecular processes. Nevertheless, both require a significant investment of computational resources. We have combined WE and milestoning to calculate observables in orders-of-magnitude less central processing unit and wall-clock time. Our weighted ensemble milestoning method (WEM) uses WE simulation to converge the transition probability and first passage times between milestones, followed by the utilization of the theoretical framework of milestoning to extract thermodynamic and kinetic properties of the entire process. We tested our method for a simple one-dimensional double-well potential, for an eleven-dimensional potential energy surface with energy barrier, and on the biomolecular model system alanine dipeptide. We were able to recover the free energy profiles, time correlation functions, and mean first passage times for barrier crossing events at a significantly small computational cost. WEM promises to extend the applicability of molecular dynamics simulation to slow dynamics of large systems that are well beyond the scope of present day brute-force computations.},
+author = {Dhiman Ray and I. Andricioaei},
+journal = {The Journal of chemical physics},
+volume = {152 23},
+pages = {
+          234114
+        },
+doi = {10.1063/5.0008028},
+pmid = {32571033},
+arxivid = {1912.10650},
+}
+
+@article{271b425f60d895ed3fbf041005937b70a52f6d0a,
+title = {Simultaneous Computation of Dynamical and Equilibrium Information Using a Weighted Ensemble of Trajectories},
+year = {2012},
+url = {https://www.semanticscholar.org/paper/271b425f60d895ed3fbf041005937b70a52f6d0a},
+abstract = {Equilibrium formally can be represented as an ensemble of uncoupled systems undergoing unbiased dynamics in which detailed balance is maintained. Many nonequilibrium processes can be described by suitable subsets of the equilibrium ensemble. Here, we employ the “weighted ensemble” (WE) simulation protocol [Huber and Kim, Biophys. J.1996, 70, 97–110] to generate equilibrium trajectory ensembles and extract nonequilibrium subsets for computing kinetic quantities. States do not need to be chosen in advance. The procedure formally allows estimation of kinetic rates between arbitrary states chosen after the simulation, along with their equilibrium populations. We also describe a related history-dependent matrix procedure for estimating equilibrium and nonequilibrium observables when phase space has been divided into arbitrary non-Markovian regions, whether in WE or ordinary simulation. In this proof-of-principle study, these methods are successfully applied and validated on two molecular systems: explicitly solvated methane association and the implicitly solvated Ala4 peptide. We comment on challenges remaining in WE calculations.},
+author = {Ernesto Suárez and S. Lettieri and M. Zwier and C. Stringer and S. Subramanian and L. Chong and D. Zuckerman},
+journal = {Journal of Chemical Theory and Computation},
+volume = {10},
+pages = {2658 - 2667},
+doi = {10.1021/ct401065r},
+pmid = {25246856},
+arxivid = {1210.3094},
+}
+
+@article{83d15e82b844b1eab9bf45d09b7d1f995315143d,
+title = {Weighted ensemble: Recent mathematical developments},
+year = {2022},
+url = {https://www.semanticscholar.org/paper/83d15e82b844b1eab9bf45d09b7d1f995315143d},
+abstract = {Weighted ensemble (WE) is an enhanced sampling method based on periodically replicating and pruning trajectories generated in parallel. WE has grown increasingly popular for computational biochemistry problems due, in part, to improved hardware and accessible software implementations. Algorithmic and analytical improvements have played an important role, and progress has accelerated in recent years. Here, we discuss and elaborate on the WE method from a mathematical perspective, highlighting recent results that enhance the computational efficiency. The mathematical theory reveals a new strategy for optimizing trajectory management that approaches the best possible variance while generalizing to systems of arbitrary dimension.},
+author = {D. Aristoff and J. Copperman and G. Simpson and R. Webber and D. Zuckerman},
+journal = {The Journal of chemical physics},
+volume = {158 1},
+pages = {
+          014108
+        },
+doi = {10.1063/5.0110873},
+pmid = {36610976},
+arxivid = {2206.14943},
+}
+
+@article{7a3cc9f19cc3dc2bc9d7e41887ed005c46b44e8a,
+title = {Efficient Atomistic Simulation of Pathways and Calculation of Rate Constants for a Protein-Peptide Binding Process: Application to the MDM2 Protein and an Intrinsically Disordered p53 Peptide.},
+year = {2016},
+url = {https://www.semanticscholar.org/paper/7a3cc9f19cc3dc2bc9d7e41887ed005c46b44e8a},
+abstract = {The characterization of protein binding processes - with all of the key conformational changes - has been a grand challenge in the field of biophysics. Here, we have used the weighted ensemble path sampling strategy to orchestrate molecular dynamics simulations, yielding atomistic views of protein-peptide binding pathways involving the MDM2 oncoprotein and an intrinsically disordered p53 peptide. A total of 182 independent, continuous binding pathways were generated, yielding a kon that is in good agreement with experiment. These pathways were generated in 15 days using 3500 cores of a supercomputer, substantially faster than would be possible with "brute force" simulations. Many of these pathways involve the anchoring of p53 residue F19 into the MDM2 binding cleft when forming the metastable encounter complex, indicating that F19 may be a kinetically important residue. Our study demonstrates that it is now practical to generate pathways and calculate rate constants for protein binding processes using atomistic simulation on typical computing resources.},
+author = {M. Zwier and A. Pratt and J. Adelman and Joseph W. Kaus and D. Zuckerman and L. Chong},
+journal = {The journal of physical chemistry letters},
+volume = {7 17},
+pages = {
+          3440-5
+        },
+doi = {10.1021/acs.jpclett.6b01502},
+pmid = {27532687},
+}
+
+@article{b25ddb56a85d44a884350c434db5565228a3cf5f,
+title = {Efficient stochastic simulation of chemical kinetics networks using a weighted ensemble of trajectories.},
+year = {2013},
+url = {https://www.semanticscholar.org/paper/b25ddb56a85d44a884350c434db5565228a3cf5f},
+abstract = {We apply the "weighted ensemble" (WE) simulation strategy, previously employed in the context of molecular dynamics simulations, to a series of systems-biology models that range in complexity from a one-dimensional system to a system with 354 species and 3680 reactions. WE is relatively easy to implement, does not require extensive hand-tuning of parameters, does not depend on the details of the simulation algorithm, and can facilitate the simulation of extremely rare events. For the coupled stochastic reaction systems we study, WE is able to produce accurate and efficient approximations of the joint probability distribution for all chemical species for all time t. WE is also able to efficiently extract mean first passage times for the systems, via the construction of a steady-state condition with feedback. In all cases studied here, WE results agree with independent "brute-force" calculations, but significantly enhance the precision with which rare or slow processes can be characterized. Speedups over "brute-force" in sampling rare events via the Gillespie direct Stochastic Simulation Algorithm range from ~10(12) to ~10(18) for characterizing rare states in a distribution, and ~10(2) to ~10(4) for finding mean first passage times.},
+author = {Rory M. Donovan and A. Sedgewick and J. Faeder and D. Zuckerman},
+journal = {The Journal of chemical physics},
+volume = {139 11},
+pages = {
+          115105
+        },
+doi = {10.1063/1.4821167},
+pmid = {24070313},
+arxivid = {1303.5986},
+}
+
+@article{866de630bd140fae3c66fcf1d1d697680d044bc9,
+title = {Molecular Simulations of Pathways and Kinetics for Protein-protein Binding Processes},
+year = {2018},
+url = {https://www.semanticscholar.org/paper/866de630bd140fae3c66fcf1d1d697680d044bc9},
+abstract = {Protein-protein binding processes are crucial for biological functions and characterizing these processes fully has been a challenge in biophysics. In this work I use weighted ensemble path sampling method coupled with molecular simulations of varying levels of detail to answer long standing questions regarding protein-protein binding. In Chapter 3, I investigate the effects of preorganization on association between an intrinsically disordered peptide fragment of tumor suppressor p53 and the MDM2 protein using flexible residue level models. I simulated the binding process between p53 and MDM2 with varying degrees of preorganization in p53 and determined that the association rate constant of p53 peptide does not depend on the extent to which the peptide is preorganized for binding MDM2. In Chapter 4, I apply simulations with flexible molecular models to directly compute the “basal” kon for the association of the two proteins barnase and barstar, in the absence of electrostatics. I simulated the binding process between exact hydrophobic analogues barnase and barstar and determined the extent with which the electrostatics enhance the basal kon. Finally, in Chapter 5, I have generated binding pathways of barnase and barstar using all-atom simulations with explicit solvent. This study not only enabled a more detailed characterization of the binding mechanism but also provided an opportunity to determine the role of solvent in the binding process. Water molecules are proposed to play a crucial role in binding of barnase and barstar since water molecules can be found at the binding interface in the crystal structure and they increase the interfacial complementarity. Overall, the work presented here demonstrates the power of the weighted ensemble strategy in making it practical to characterize binding processes that are otherwise unfeasible for standard simulations},
+author = {A. S. Saglam},
+}
+
+@article{1ac22861a147e0ce8bf762ab876cfa7b5368d16a,
+title = {Exact rate calculations by trajectory parallelization and tilting.},
+year = {2009},
+url = {https://www.semanticscholar.org/paper/1ac22861a147e0ce8bf762ab876cfa7b5368d16a},
+abstract = {A sampling procedure to compute exactly the rate of activated processes arising in systems at equilibrium or nonequilibrium steady state is presented. The procedure is a generalization of the method proposed in [A. Warmflash et al., J. Chem. Phys. 127, 154112 (2007); A. Dickson et al., J. Chem. Phys. 130, 074104 (2009)] in which one performs simulations restricted into cells by using a reinjection rule at the boundaries of the cells which is consistent with the exact probability fluxes through these boundaries. Our generalization uses results from transition path theory which indicate how to tilt the dynamics to calculate reaction rates.},
+author = {E. Vanden-Eijnden and M. Venturoli},
+journal = {The Journal of chemical physics},
+volume = {131 4},
+pages = {
+          044120
+        },
+doi = {10.1063/1.3180821},
+pmid = {19655850},
+arxivid = {0904.3763},
+}
+
+@article{55c2b0fbdfbb3fd3626019b21c23c7678a55d80a,
+title = {Accelerated estimation of long-timescale kinetics from weighted ensemble simulation via non-Markovian "microbin" analysis.},
+year = {2020},
+url = {https://www.semanticscholar.org/paper/55c2b0fbdfbb3fd3626019b21c23c7678a55d80a},
+abstract = {The weighted ensemble (WE) simulation strategy provides unbiased sampling of non-equilibrium processes, such as molecular folding or binding, but the extraction of rate constants relies on characterizing steady state behavior. Unfortunately, WE simulations of sufficiently complex systems will not relax to steady state on observed simulation times. Here we show that a post-simulation clustering of molecular configurations into "microbins" using methods developed in the Markov State Model (MSM) community, can yield unbiased kinetics from WE data before steady-state convergence of the WE simulation itself. Because WE trajectories are directional and not equilibrium-distributed, the history-augmented MSM (haMSM) formulation can be used, which yields the mean first-passage time (MFPT) without bias for arbitrarily small lag times. Accurate kinetics can be obtained while bypassing the often prohibitive convergence requirements of the non-equilibrium weighted ensemble. We validate the method in a simple diffusive process on a 2D random energy landscape, and then analyze atomistic protein folding simulations using WE molecular dynamics. We report significant progress towards the unbiased estimation of protein folding times and pathways, though key challenges remain.},
+author = {J. Copperman and D. Zuckerman},
+journal = {Journal of chemical theory and computation},
+volume = {null},
+pages = {null},
+doi = {10.1021/acs.jctc.0c00273},
+pmid = {32990438},
+}
+
+@article{2de01acad91608f558245596c011cca7f9dee3da,
+title = {Unbiased Rare Event Sampling in Spatial Stochastic Systems Biology Models Using a Weighted Ensemble of Trajectories},
+year = {2016},
+url = {https://www.semanticscholar.org/paper/2de01acad91608f558245596c011cca7f9dee3da},
+abstract = {The long-term goal of connecting scales in biological simulation can be facilitated by scale-agnostic methods. We demonstrate that the weighted ensemble (WE) strategy, initially developed for molecular simulations, applies effectively to spatially resolved cell-scale simulations. The WE approach runs an ensemble of parallel trajectories with assigned weights and uses a statistical resampling strategy of replicating and pruning trajectories to focus computational effort on difficult-to-sample regions. The method can also generate unbiased estimates of non-equilibrium and equilibrium observables, sometimes with significantly less aggregate computing time than would be possible using standard parallelization. Here, we use WE to orchestrate particle-based kinetic Monte Carlo simulations, which include spatial geometry (e.g., of organelles, plasma membrane) and biochemical interactions among mobile molecular species. We study a series of models exhibiting spatial, temporal and biochemical complexity and show that although WE has important limitations, it can achieve performance significantly exceeding standard parallel simulation—by orders of magnitude for some observables.},
+author = {Rory M. Donovan and J. Tapia and Devin P. Sullivan and J. Faeder and R. Murphy and M. Dittrich and D. Zuckerman},
+journal = {PLoS Computational Biology},
+volume = {12},
+pages = {null},
+doi = {10.1371/journal.pcbi.1004611},
+pmid = {26845334},
+}
